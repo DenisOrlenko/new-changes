@@ -1,0 +1,57 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+}
+
+body {
+  color: #757575;
+  background-color: #fff;
+}
+
+/* основной цвет текста (прозрачный) #757575  */
+
+/* вторичный цвет текста (черный) #212121 */
+
+/* белый текст + фон (хедер) #ffffff */
+
+/* вторичный цвет фона (чем мы занимаемся) #e5e5e5 */
+
+/* третий фон #f5f4fA (наша команда) */
+
+/* фон футера + (эффиктивные решения) #2f303a */
+
+/* акцент #2196f3 */
+
+/* .logo-web, logo-studio Логотип сине-черный */
+.logo-web {
+  color: var(--accent-color);
+}
+.logo-studio {
+  color: black;
+}
+
+/* .list Убираем маркеры с нужных нам списков */
+.list {
+  list-style: none;
+}
+
+/* site-nav цвет списка ссылок */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+/* site-nav цвет ссылки при наведении */
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.hero-title {
+  color: var(--title-text-color);
+}
+
+/* section применение к однотипным секциям, в которых одинаковый цвет заголовка */
+.section-title {
+  color: var(--title-text-color);
+}
