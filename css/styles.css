@@ -2,11 +2,12 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
 }
 
 body {
-  color: #757575;
-  background-color: #fff;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
 }
 
 /* основной цвет текста (прозрачный) #757575  */
@@ -44,7 +45,11 @@ body {
 /* site-nav цвет ссылки при наведении */
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--accent-color);
+  color: #2196f3;
+}
+
+.site-nav .link .current {
+  color: #2196f3;
 }
 
 .hero-title {
@@ -54,4 +59,10 @@ body {
 /* section применение к однотипным секциям, в которых одинаковый цвет заголовка */
 .section-title {
   color: var(--title-text-color);
+}
+
+/* button применение формления к кнопке */
+.hero > button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
