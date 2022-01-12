@@ -45,11 +45,11 @@ body {
 /* site-nav цвет ссылки при наведении */
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
-.site-nav .link .current {
-  color: #2196f3;
+.site-nav .link.current {
+  color: var(--accent-color);
 }
 
 .hero-title {
