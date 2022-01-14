@@ -5,11 +5,6 @@
   --primary-white-color: #ffffff;
 }
 
-body {
-  color: var(--primary-text-color);
-  background-color: var(--primary-white-color);
-}
-
 /* основной цвет текста (прозрачный) #757575  */
 
 /* вторичный цвет текста (черный) #212121 */
@@ -23,6 +18,11 @@ body {
 /* фон футера + (эффиктивные решения) #2f303a */
 
 /* акцент #2196f3 */
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
 
 /* .logo-web, logo-studio Логотип сине-черный */
 .logo-web {
@@ -48,10 +48,23 @@ body {
   color: var(--accent-color);
 }
 
+/* current - Позиционирование открытой ссылки на текущей странице*/
 .site-nav .link.current {
   color: var(--accent-color);
 }
 
+/* задается цвет списку контактов в шапке */
+.contact .link {
+  color: var(--primary-text-color);
+}
+
+/* задается цвет подсвечивания ссылки при наведении курсором */
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--accent-color);
+
+
+/* Задается цвет заголовку Героя */
 .hero-title {
   color: var(--title-text-color);
 }
