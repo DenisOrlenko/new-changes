@@ -3,6 +3,9 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --footer-bg: #2f303a;
+  --footer-secondary: rgba(255, 255, 255, 0.6);
 }
 
 /* основной цвет текста (прозрачный) #757575  */
@@ -11,25 +14,42 @@
 
 /* белый текст + фон (хедер) #ffffff */
 
-/* вторичный цвет фона (чем мы занимаемся) #e5e5e5 */
-
-/* третий фон #f5f4fA (наша команда) */
+/* второй фон #f5f4fA (наша команда) */
 
 /* фон футера + (эффиктивные решения) #2f303a */
 
 /* акцент #2196f3 */
 
+/* Добавление в Body: основной цвет и шрифт текста + фон */
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
 }
 
 /* .logo-web, logo-studio Логотип сине-черный */
-.logo-web {
-  color: var(--accent-color);
+a.logo {
+  text-decoration: none;
 }
-.logo-studio {
+
+.accent {
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+/* WebStudio - черный */
+a .accent.black {
   color: black;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
 /* .list Убираем маркеры с нужных нам списков */
@@ -40,6 +60,11 @@ body {
 /* site-nav цвет списка ссылок */
 .site-nav .link {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 /* site-nav цвет ссылки при наведении */
@@ -56,6 +81,11 @@ body {
 /* задается цвет списку контактов в шапке */
 .contact .link {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 /* задается цвет подсвечивания ссылки при наведении курсором */
@@ -63,19 +93,123 @@ body {
 .contact .link:focus {
   color: var(--accent-color);
 
-
-/* Задается цвет заголовку Героя */
+  /* задается позиционирование открытой ссылки на текущей странице */
+}
+/* h1 Задается цвет заголовку Героя */
 .hero-title {
-  color: var(--title-text-color);
+  color: var(--primary-white-color);
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-/* section применение к однотипным секциям, в которых одинаковый цвет заголовка */
+/* фон Героя */
+.solutions {
+  background-color: var(--footer-bg);
+}
+
+/* h2 section применение к однотипным секциям, в которых одинаковый цвет заголовка */
 .section-title {
   color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  /* letter-spacing: 0.03em; */
+}
+
+/* фон к section */
+.masters {
+  background-color: var(--secondary-bg-color);
+}
+
+/* h3 оформление-1 */
+.feature-list .title {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* h3 оформление -2 */
+.team-list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18px;
+  text-align: center;
+}
+
+/* p - оформление-1 */
+.feature-list .text {
+  font-size: 14px;
+  line-height: 1.71px;
+}
+
+/* p - оформление-2 */
+.team-list .text {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
 }
 
 /* button применение формления к кнопке */
 .hero > button {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+/* футер отмена подчеркивания */
+.adress-list {
+  text-decoration: none;
+}
+
+/* фон футер */
+.down {
+  background-color: var(--footer-bg);
+}
+
+/* адресс-город цвет */
+.down .city {
+  color: var(--primary-white-color);
+}
+
+/* лого Studio - белый цвет */
+a .accent.white {
+  color: var(--primary-white-color);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+/* Город - оформление */
+.down .city {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* почта и телефон - оформление */
+.down .mail,
+.down .phone {
+  color: var(--footer-secondary);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* mail - серый цвет */
+address > a {
+  color: var(--footer-secondary);
 }
