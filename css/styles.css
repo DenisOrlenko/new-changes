@@ -212,4 +212,5 @@ a .accent.white {
 /* mail - серый цвет */
 address > a {
   color: var(--footer-secondary);
+  text-decoration: none;
 }
