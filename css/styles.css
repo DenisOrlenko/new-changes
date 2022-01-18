@@ -1,29 +1,33 @@
 :root {
   --primary-text-color: #757575;
+  --secondary-text-color: #ffffff;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
   --title-text-color: #212121;
+  --logo-black-color: #000000;
   --accent-color: #2196f3;
-  --primary-white-color: #ffffff;
+  --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
-  --footer-bg: #2f303a;
-  --footer-secondary: rgba(255, 255, 255, 0.6);
+  --footer-bg-color: #2f303a;
 }
 
 /* основной цвет текста (прозрачный) #757575  */
 
 /* вторичный цвет текста (черный) #212121 */
 
-/* белый текст + фон (хедер) #ffffff */
+/* третий цвет текста (белый) #ffffff */
 
-/* второй фон #f5f4fA (наша команда) */
+/* основной фон (белый)  #ffffff */
 
-/* фон футера + (эффиктивные решения) #2f303a */
+/* второй фон (белый с прозрачностью) #f5f4fA (наша команда) */
+
+/* третий фон футера + эффиктивные решения (серый) #2f303a */
 
 /* акцент #2196f3 */
 
 /* Добавление в Body: основной цвет и шрифт текста + фон */
 body {
   color: var(--primary-text-color);
-  background-color: var(--primary-white-color);
+  background-color: var(--primary-bg-color);
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
 }
@@ -41,7 +45,7 @@ a.logo {
 
 /* WebStudio - черный */
 a .accent.black {
-  color: black;
+  color: var(--logo-black-color);
 }
 
 /* .list Убираем маркеры с нужных нам списков */
@@ -89,7 +93,7 @@ a .accent.black {
 }
 /* h1 Задается цвет заголовку Героя */
 .hero-title {
-  color: var(--primary-white-color);
+  color: var(--secondary-text-color);
   font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
@@ -101,7 +105,7 @@ a .accent.black {
 
 /* фон Героя */
 .solutions {
-  background-color: var(--footer-bg);
+  background-color: var(--footer-bg-color);
 }
 
 /* h2 section применение к однотипным секциям, в которых одинаковый цвет заголовка */
@@ -149,7 +153,7 @@ a .accent.black {
 
 /* button применение формления к кнопке */
 .hero > button {
-  color: var(--primary-white-color);
+  color: var(--secondary-text-color);
   background-color: var(--accent-color);
   font-family: Roboto;
   font-weight: 700;
@@ -160,17 +164,17 @@ a .accent.black {
 
 /* фон - футер */
 footer {
-  background-color: var(--footer-bg);
+  background-color: var(--footer-bg-color);
 }
 
 /* Studio - белый цвет */
 a .accent.white {
-  color: var(--primary-white-color);
+  color: var(--secondary-text-color);
 }
 
 .city .link {
   text-decoration: none;
-  color: var(--primary-white-color);
+  color: var(--secondary-text-color);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -179,7 +183,7 @@ a .accent.white {
 
 /* mail - оформление */
 .down .mail-phone {
-  color: var(--footer-secondary);
+  color: var(--footer-text-color);
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
@@ -189,7 +193,7 @@ a .accent.white {
 
 /* phone - оформление */
 .mail-phone .link {
-  color: var(--footer-secondary);
+  color: var(--footer-text-color);
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
