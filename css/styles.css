@@ -7,7 +7,7 @@
   --accent-color: #2196f3;
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
-  --footer-bg-color: #2f303a;
+  --footer-bg: #2f303a;
 }
 
 /* основной цвет текста (прозрачный) #757575  */
@@ -58,7 +58,7 @@ a .accent.black {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
@@ -79,7 +79,7 @@ a .accent.black {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14px;
+  line-height: 1.14px;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
@@ -88,9 +88,18 @@ a .accent.black {
 .contact .link:hover,
 .contact .link:focus {
   color: var(--accent-color);
-
-  /* задается позиционирование открытой ссылки на текущей странице */
 }
+
+/* номер телефона абзац - оформление */
+.contact .contact-phone {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
 /* h1 Задается цвет заголовку Героя */
 .hero-title {
   color: var(--secondary-text-color);
@@ -105,7 +114,7 @@ a .accent.black {
 
 /* фон Героя */
 .solutions {
-  background-color: var(--footer-bg-color);
+  background-color: var(--footer-bg);
 }
 
 /* h2 section применение к однотипным секциям, в которых одинаковый цвет заголовка */
@@ -164,7 +173,7 @@ a .accent.black {
 
 /* фон - футер */
 footer {
-  background-color: var(--footer-bg-color);
+  background-color: var(--footer-bg);
 }
 
 /* Studio - белый цвет */
