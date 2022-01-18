@@ -28,12 +28,9 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* .logo-web, logo-studio Логотип сине-черный */
+/* .logo-web - синий логотип */
 a.logo {
   text-decoration: none;
-}
-
-.accent {
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.03em;
@@ -45,11 +42,6 @@ a.logo {
 /* WebStudio - черный */
 a .accent.black {
   color: black;
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 0.03em;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
 }
 
 /* .list Убираем маркеры с нужных нам списков */
@@ -174,11 +166,6 @@ footer {
 /* Studio - белый цвет */
 a .accent.white {
   color: var(--primary-white-color);
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
 }
 
 .city .link {
