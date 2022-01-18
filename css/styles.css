@@ -32,6 +32,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* .list Убираем маркеры с нужных нам списков */
+.list {
+  list-style: none;
+}
+
+/* -----------------HEADER-------------------------- */
 /* .logo-web - синий логотип */
 a.logo {
   text-decoration: none;
@@ -46,11 +52,6 @@ a.logo {
 /* WebStudio - черный */
 a .accent.black {
   color: var(--logo-black-color);
-}
-
-/* .list Убираем маркеры с нужных нам списков */
-.list {
-  list-style: none;
 }
 
 /* site-nav цвет списка ссылок */
@@ -89,6 +90,13 @@ a .accent.black {
 .contact .link:focus {
   color: var(--accent-color);
 }
+
+/* ---------------------HERO----------------------- */
+/* фон Героя */
+.solutions {
+  background-color: var(--footer-bg-color);
+}
+
 /* h1 Задается цвет заголовку Героя */
 .hero-title {
   color: var(--secondary-text-color);
@@ -99,54 +107,6 @@ a .accent.black {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-
-/* фон Героя */
-.solutions {
-  background-color: var(--footer-bg-color);
-}
-
-/* h2 section применение к однотипным секциям, в которых одинаковый цвет заголовка */
-.section-title {
-  color: var(--title-text-color);
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  /* letter-spacing: 0.03em; */
-}
-
-/* фон к section */
-.masters {
-  background-color: var(--secondary-bg-color);
-}
-
-/* h3 оформление-1 */
-.feature-list .title {
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-/* h3 оформление -2 */
-.team-list .title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18px;
-  text-align: center;
-}
-
-/* p - оформление-1 */
-.feature-list .text {
-  font-size: 14px;
-  line-height: 1.71px;
-}
-
-/* p - оформление-2 */
-.team-list .text {
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
 }
 
 /* button применение формления к кнопке */
@@ -160,6 +120,54 @@ a .accent.black {
   letter-spacing: 0.06em;
 }
 
+/* --------------------SECTION-2------------------- */
+/* применение ЗАГОЛОВКА к однотипным секциям, в которых одинаковый цвет заголовка */
+.section-title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  /* letter-spacing: 0.03em; */
+}
+
+/* h3 оформление-1 */
+.feature-list .title {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* p - оформление-1 */
+.feature-list .text {
+  font-size: 14px;
+  line-height: 1.71px;
+}
+
+/* --------------------SECTION-3------------------- */
+
+/* --------------------SECTION-4------------------- */
+/* фон к section */
+.masters {
+  background-color: var(--secondary-bg-color);
+}
+
+/* h3 оформление -2 */
+.team-list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18px;
+  text-align: center;
+}
+
+/* p - оформление-2 */
+.team-list .text {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+/* -----------------------ФУТЕР---------------- */
 /* фон - футер */
 footer {
   background-color: var(--footer-bg-color);
