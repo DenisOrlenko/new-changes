@@ -166,22 +166,12 @@ a .accent.black {
   letter-spacing: 0.06em;
 }
 
-/* футер отмена подчеркивания */
-.adress-list {
-  text-decoration: none;
-}
-
-/* фон футер */
-.down {
+/* фон - футер */
+footer {
   background-color: var(--footer-bg);
 }
 
-/* адресс-город цвет */
-.down .city {
-  color: var(--primary-white-color);
-}
-
-/* лого Studio - белый цвет */
+/* Studio - белый цвет */
 a .accent.white {
   color: var(--primary-white-color);
   font-family: 'Raleway', sans-serif;
@@ -191,26 +181,31 @@ a .accent.white {
   line-height: 1.19;
 }
 
-/* Город - оформление */
-.down .city {
+.city .link {
+  text-decoration: none;
+  color: var(--primary-white-color);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
 
-/* почта и телефон - оформление */
-.down .mail,
-.down .phone {
-  color: var(--footer-secondary);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-/* mail - серый цвет */
-address > a {
+/* mail - оформление */
+.down .mail-phone {
   color: var(--footer-secondary);
   text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* phone - оформление */
+.mail-phone .link {
+  color: var(--footer-secondary);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
