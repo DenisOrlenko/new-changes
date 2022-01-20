@@ -100,7 +100,7 @@ a .accent.black {
 /* h1 Задается цвет заголовку Героя */
 .hero-title {
   color: var(--secondary-text-color);
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -110,11 +110,12 @@ a .accent.black {
 }
 
 /* button применение формления к кнопке */
-.hero > button {
+.hero .hero-button {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
-  font-family: Roboto;
-  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -127,12 +128,12 @@ a .accent.black {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  /* letter-spacing: 0.03em; */
+  letter-spacing: 0.03em;
 }
 
 /* h3 оформление-1 */
 .feature-list .title {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -187,6 +188,16 @@ a .accent.white {
   line-height: 1.71;
 }
 
+/* phone - оформление */
+.mail-phone .link {
+  color: var(--footer-text-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
 /* mail - оформление */
 .down .mail-phone {
   color: var(--footer-text-color);
@@ -197,12 +208,31 @@ a .accent.white {
   line-height: 1.71;
 }
 
-/* phone - оформление */
-.mail-phone .link {
-  color: var(--footer-text-color);
-  text-decoration: none;
+/* ------------------------------------------- */
+/* ------------------ПОРТФОЛИО---------------- */
+/* ------------------------------------------- */
+
+/* button применение формления к кнопке */
+
+/* .directions .directions-item-first,
+.directions .directions-item-second,
+.directions .directions-item-third,
+.directions .directions-item-fourth,
+.directions .directions-item-fifth { */
+.directions button {
+  color: var(--title-text-color);
+  font-family: inherit;
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+
+/* -------------------------------- */
+.example-list .example-title {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
