@@ -6,43 +6,62 @@
   <meta name="description" content="Предоставление услуг Веб разработки" />
   <title>Веб студия</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- Содержание -->
   <header>
-    <!-- Шапка-Навигация -->
+    <!-- HEADER -->
     <nav>
-      <a class="logo" href="./index.html"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+      <a class="logo" href="./index.html">Web<span class="accent black">Studio</span></a>
       <ul class="site-nav list">
-        <li><a href="./index.html" class="link" >Студия</a></li>
-        <li><a href="./portfolio.html" class="link current" >Портфолио</a></li>
-        <li><a href="./contacts.html" class="link" >Контакты</a></li>
+        <li><a href="./index.html" class="link current">Студия</a></li>
+        <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+        <li><a href="" class="link">Контакты</a></li>
       </ul>
     </nav>
-    <!-- Шапка-контакты -->
+    <!-- КОНТАКТЫ -->
     <ul class="contact list">
-      <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+      <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
     </ul>
+    <!-- HEADER - ПО ДАНИЛКО (РОДИТЕЛЬ-РЕБЕНОК) -->
   </header>
+  <section class="directions">
+    <h1 hidden> Портфолио</h1>
+    <ul class="directions-list list">
+      <li class="directions-item">
+        <button class="directions-item-first" class="button"> Все</button>
+        <button class="directions-item-second" class="button"> Веб-сайты</button>
+        <button class="directions-item-third" class="button"> Приложения</button>
+        <button class="directions-item-fourth" class="button"> Дизайн</button>
+        <button class="directions-item-fifth" class="button"> Маркетинг</button>
+      </li>
+    </ul>
+    <ul class="example-list list">
+      <li class="example-item"> <img src="" alt="Технокряк">
+        <h2 class="example-title"> Технокряк</h2>
+        <p class="example-text"> Веб-сайт</p>
+  </section>;
+
 
   <h1>Контент страницы portfolio.html</h1>
 
   <!-- Футер -->
-  <footer>
-    <ul>
-      <li><a href="./index.html">WebStudio</a></li>
-      <li>
-        <address>г. Киев, пр-т Леси Украинки, 26</address>
-      </li>
-      <li>
-        <address><a href="mailto:info@example.com">info@example.com</a></address>
-      </li>
-      <li>
-        <address><a href="tel:+1112223344"></a>(111) 222 33 44</address>
-      </li>
-    </ul>
+  <footer class="adress-list down">
+    <a class="logo" href="./index.html">Web<span class="accent white">Studio</span></a>
+    <address class="city">
+      <a class="link"
+        href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&ll=50.42732700000001%2C30.538092&z=17"
+        target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+    </address>
+    <address class="mail-phone">
+      <a href="mailto:info@example.com" class="link">info@example.com</a>
+      <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+    </address>
   </footer>
 </body>
 
