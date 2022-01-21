@@ -214,13 +214,13 @@ a .accent.white {
 
 /* button применение формления к кнопке */
 
-/* .directions .directions-item-first,
+.directions .directions-item-first,
 .directions .directions-item-second,
 .directions .directions-item-third,
 .directions .directions-item-fourth,
-.directions .directions-item-fifth { */
-.directions button {
+.directions .directions-item-fifth {
   color: var(--title-text-color);
+  background-color: var(--secondary-bg-color);
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -229,10 +229,22 @@ a .accent.white {
   letter-spacing: 0.03em;
 }
 
+/* Кнопка - наведеие и фокус */
+.directions button:hover,
+.directions button:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+
 /* -------------------------------- */
 .example-list .example-title {
+  color: var(--title-text-color);
   font-style: normal;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+
+.example-list .example-text {
+  line-height: 1.87;
 }
