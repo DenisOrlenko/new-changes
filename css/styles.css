@@ -142,7 +142,7 @@ a .accent.black {
 /* p - оформление-1 */
 .feature-list .text {
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
 }
 
 /* --------------------SECTION-3------------------- */
