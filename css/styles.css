@@ -227,6 +227,7 @@ a .accent.white {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+  border-radius: 4px;
 }
 
 /* Кнопка - наведеие и фокус */
