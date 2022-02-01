@@ -80,7 +80,7 @@ a .accent.black {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
@@ -126,7 +126,7 @@ a .accent.black {
 .section-title {
   color: var(--title-text-color);
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -157,7 +157,7 @@ a .accent.black {
 .team-list .title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18px;
+  line-height: 1.18;
   text-align: center;
 }
 
