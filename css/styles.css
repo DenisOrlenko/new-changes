@@ -120,6 +120,7 @@ a .accent.black {
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border-style: none;
 }
 
 /* --------------------SECTION-2------------------- */
@@ -214,12 +215,7 @@ a .accent.white {
 /* ------------------------------------------- */
 
 /* button применение формления к кнопке */
-
-.directions .directions-item-first,
-.directions .directions-item-second,
-.directions .directions-item-third,
-.directions .directions-item-fourth,
-.directions .directions-item-fifth {
+.directions .button {
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
   font-family: inherit;
@@ -229,11 +225,13 @@ a .accent.white {
   line-height: 1.6;
   letter-spacing: 0.03em;
   border-radius: 4px;
+  cursor: pointer;
+  border-style: none;
 }
 
 /* Кнопка - наведеие и фокус */
-.directions button:hover,
-.directions button:focus {
+.directions .button:hover,
+.directions .button:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
 }
